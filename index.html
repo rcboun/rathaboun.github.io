@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Rathaboun</title>
-  </head>
-  <body>
-    <h1>Hello, I'm Rathaboun</h1>
-    <p>Welcome to my personal portfolio.</p>
-  </body>
-</html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ratha Boun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+  :root {
+    --ink: #1a1814;
+    --paper: #f7f5f0;
+    --muted: #8a8680;
+    --rule: #d8d4cc;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --mono: 'DM Mono', monospace;
+  }
+
+  html, body { height: 100%; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  .name {
+    font-family: var(--serif);
+    font-size: clamp(40px, 8vw, 88px);
+    font-weight: 300;
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+    margin-bottom: 2rem;
+  }
+
+  .name em {
+    font-style: italic;
+    color: var(--muted);
+  }
+
+  .message {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  footer {
+    border-top: 0.5px solid var(--rule);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-size: 11px;
+    color: var(--rule);
+    letter-spacing: 0.06em;
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <h1 class="name">Ratha<br><em>Boun</em></h1>
+  <p class="message">Under construction — check back soon</p>
+</main>
+
+<footer>© 2026 Ratha Boun. All rights reserved.</footer>
+
+</body>
+</html>
